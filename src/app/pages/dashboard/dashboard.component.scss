@@ -1,0 +1,19 @@
+ .tittle {
+    background-color: #E2F0ED;
+    color: #21A275;
+    font-weight: bolder;
+}
+.card-line{
+    display: flex;
+    align-content: center;;
+    flex-direction: row;
+    align-items: end;
+    gap: 24px;
+}
+.info-cards {
+    height: 70px;
+    width: 200px;
+    border: 1px solid red;
+    gap: 24px;
+    margin: auto;
+}
