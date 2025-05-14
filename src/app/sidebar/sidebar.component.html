@@ -3,160 +3,30 @@
     <div class="icons">
       <img src="https://placehold.co/32x32" alt="icones-personal" srcset="" />
     </div>
-    <span>Slip</span>
+    <span>Flopper</span>
   </div>
-  <div class="container-session">
-    <div class="border-r">
-      <span class="session-tittle">MARKETING</span>
-      <div>
-        <div class="menu-opt selected">
-          <div class="icons">
-            <i class="fa-solid fa-square-poll-vertical"></i>
-          </div>
-          <div>
-            <span>Dashboard</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-cart-shopping"></i></div>
-          <div>
-            <span>Marketplace</span>
-          </div>
-        </div>
 
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-bag-shopping"></i></div>
-          <div>
-            <span>Orders</span>
-          </div>
+  <div class="container-session">
+    <div *ngFor="let session of menuData" class="">
+      <span class="session-tittle">{{session.label}}</span>
+      <div *ngFor="let option of session.items" class="menu-opt selected">
+        <div class="icons">
+          <i class="fa-solid fa-square-poll-vertical"></i>
         </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-map-location-dot"></i></div>
-          <div>
-            <span>Traking</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-users"></i></div>
-          <div>
-            <span>Customers</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-money-check-dollar"></i></div>
-          <div>
-            <span>Discounts</span>
-          </div>
+        <div>
+          <span>{{option.label}}</span>
         </div>
       </div>
     </div>
   </div>
+
   <div class="container-user">
     <div class="user-card">
-        <img src="https://placehold.co/32x32" alt="" srcset=""/>
-        <div class="flex-col">
-            <span>User Name</span>
-            <span>Admin Manager</span>
-        </div>
+      <img src="https://placehold.co/32x32" alt="" srcset="" />
+      <div class="flex-col">
+        <span>User Name</span>
+        <span>Admin Manager</span>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- <div></div>
-
-<div class="main-sidebar">
-  <div class="session-conteiner">
-    <div class="border-r">
-      <span class="session-tittle">MARKETING</span>
-      <div>
-        <div class="menu-opt selected">
-          <div class="icons">
-            <i class="fa-solid fa-square-poll-vertical"></i>
-          </div>
-          <div>
-            <span>Dashboard</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-cart-shopping"></i></div>
-          <div>
-            <span>Marketplace</span>
-          </div>
-        </div>
-
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-bag-shopping"></i></div>
-          <div>
-            <span>Orders</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-map-location-dot"></i></div>
-          <div>
-            <span>Traking</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-users"></i></div>
-          <div>
-            <span>Customers</span>
-          </div>
-        </div>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-money-check-dollar"></i></div>
-          <div>
-            <span>Discounts</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="border-r">
-        <span class="session-tittle">PAYMENTS</span>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-table-cells-large"></i></div>
-          <div>
-            <span>Ledger</span>
-          </div>
-        </div>
-
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-sack-dollar"></i></div>
-          <div>
-            <span>Taxes</span>
-          </div>
-        </div>
-      </div>
-
-        <span class="session-tittle">SYSTEM</span>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-gear"></i></div>
-          <div>
-            <span>Settings</span>
-          </div>
-        </div>
-
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-yin-yang"></i></div>
-          <div>
-            <span>Dark Mode</span>
-          </div>
-          <div class="Mode-Button">
-            <div class="Dk-mode-off">
-              <i class="fa-solid fa-toggle-off"></i>
-            </div>
-            <div class="Dk-mode-on"><i class="fa-solid fa-toggle-on"></i></div>
-          </div>
-        </div>
-      </div>
-      <div class="User-profile-view">
-        <span>Aqui vai o usuário</span>
-        <div class="menu-opt">
-          <div><i class="fa-solid fa-right-from-bracket"></i></div>
-          <div>
-            <span>Log Out</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- -->
