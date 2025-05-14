@@ -1,0 +1,63 @@
+.main-sidebar{
+    color: #778882;
+    background-color: #F8F8FA;
+    font-family: 'inter';
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row  {
+    display: flex;
+    flex-direction: row;
+}
+.container-logo{
+    padding: 12px;
+    gap: 12px;
+    align-items: center;
+}
+.container-session{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+    height: 100%;
+}
+.container-user {
+    padding: 12px;
+    display: flex;
+    align-items: end;
+}
+.user-card{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.session-tittle{
+    padding: 10px;
+    margin: 10px;
+    color: #778882;
+}
+.menu-opt{
+    border-radius: 5%;
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    gap: 12px;
+
+}
+.menu-opt:hover{
+    background-color: #E2F0ED;
+    color: #21A275;
+    font-weight: bolder;
+}
+.icons{
+    color: #778882;
+}
+
